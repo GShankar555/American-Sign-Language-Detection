@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block content %}
+<section class="dataset-section">
+  <h1>Dataset Information</h1>
+  <p>
+    The model was trained on the "American_Sign_Language_Letters_Multiclass"
+    dataset.
+  </p>
+  <h2>ASL Alphabet Images</h2>
+  <div class="letter-images-container">
+    {% for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' %}
+    <div class="letter-card">
+      <img
+        src="{{ url_for('static', filename='images/letters/' ~ letter ~ '.jpg') }}"
+        alt="ASL Sign {{ letter }}"
+      />
+      <p>{{ letter }}</p>
+    </div>
+    {% endfor %}
+    <div class="letter-card">
+      <img
+        src="{{ url_for('static', filename='images/letters/space.jpg') }}"
+        alt="ASL Sign {{ letter }}"
+      />
+      <p>Space</p>
+    </div>
+    <div class="letter-card">
+      <img
+        src="{{ url_for('static', filename='images/letters/del.jpg') }}"
+        alt="ASL Sign {{ letter }}"
+      />
+      <p>Delete</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

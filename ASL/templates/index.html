@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Real-Time Sign Language Detection</h1>
+        <p>Welcome to our real-time ASL detection app! Simply hold up a sign in front of your camera, and the app will instantly display the detected letter.</p>
+    </div>
+</section>
+<section id="detection-section" class="detection-section">
+    <div class="video-container">
+        <h2>Start Sign Language Detection</h2>
+        <div class="video-feed-container">
+            <img id="videoFeed" src="{{ url_for('video_feed') }}" alt="Real-Time Video Feed" aria-label="Real-Time Video Feed">
+        </div>
+    </div>
+</section>
+{% endblock %}

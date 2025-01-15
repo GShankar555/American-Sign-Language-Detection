@@ -1,0 +1,64 @@
+{% extends "base.html" %} {% block content %}
+<section class="about-section">
+  <div class="about-content">
+    <h1>About ASL Detection</h1>
+    <p>
+      This application leverages the power of machine learning to recognize
+      American Sign Language (ASL) hand signs in real-time. It can detect every
+      letter from A to Z, as well as the space symbol, making communication
+      smoother for the hearing impaired.
+    </p>
+    <p>
+      Our model is trained on the
+      <strong>"American_Sign_Language_Letters_Multiclass"</strong> dataset,
+      ensuring accurate and reliable interpretation of ASL gestures. This
+      dataset consists of thousands of hand sign images, allowing our AI to
+      learn and understand subtle differences in ASL letters.
+    </p>
+    <p>
+      We believe in breaking down communication barriers and making technology
+      accessible for everyone. This project is a step toward fostering a more
+      inclusive society, bridging the gap between those who use ASL and those
+      who don't.
+    </p>
+  </div>
+</section>
+
+<section class="team-section">
+  <h2>Meet Our Team</h2>
+  <div class="team-container">
+    <div class="team-member">
+      <img
+        src="{{ url_for('static', filename='images/shankar.jpg') }}"
+        alt="Team Member 1"
+      />
+      <h3>Shankar</h3>
+      <p>UI/UX Designer</p>
+    </div>
+    <div class="team-member">
+      <img
+        src="{{ url_for('static', filename='images/harika.jpg') }}"
+        alt="Team Member 2"
+      />
+      <h3>Harika</h3>
+      <p>Machine Learning Engineer</p>
+    </div>
+    <div class="team-member">
+      <img
+        src="{{ url_for('static', filename='images/pavan.jpg') }}"
+        alt="Team Member 3"
+      />
+      <h3>Pavan</h3>
+      <p>Software Developer</p>
+    </div>
+    <div class="team-member">
+      <img
+        src="{{ url_for('static', filename='images/member.jpg') }}"
+        alt="Team Member 4"
+      />
+      <h3>Harika</h3>
+      <p>Lead Data Scientist</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
