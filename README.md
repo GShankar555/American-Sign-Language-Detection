@@ -28,7 +28,12 @@ This project implements an American Sign Language (ASL) detection system using a
    cd ASL
    ```
 
-2. **Set up a virtual environment:**
+2. **Download Dataset:**
+   ```bash
+   https://drive.google.com/file/d/1Epb3M1nAIIku185Fk8tLq2nQwn7X8LSS/view?usp=sharing
+   ```
+
+3. **Set up a virtual environment:**
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use: venv\Scripts\activate
